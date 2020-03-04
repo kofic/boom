@@ -27,6 +27,6 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
     ],
-    scripts=['scripts/boom']
+    scripts=['scripts/boom'],
     keywords=['pre-commit', 'hooks', 'python'],
 )
