@@ -1,0 +1,5 @@
+-   id: boom
+    name: boom
+    entry: boom
+    language: python
+    files: \.py$
