@@ -1,11 +1,17 @@
 #!python
 # -*- coding: utf-8 -*-
-import re
+import os
 import sys
 
 if __name__ == '__main__':
-    # sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
-    # sys.exit(main())
-    print("hey there")
-    sys.exit(0)
+
+    print("PRE_COMMIT_SOURCE: ", os.getenv('PRE_COMMIT_SOURCE'))
+    print("PRE_COMMIT_ORIGIN: ", os.getenv('PRE_COMMIT_ORIGIN'))
+    print("PRE_COMMIT_REMOTE_NAME: ", os.getenv('PRE_COMMIT_REMOTE_NAME'))
+    print("PRE_COMMIT_REMOTE_URL: ", os.getenv('PRE_COMMIT_REMOTE_URL'))
+
+    # Mark as passed
+    # sys.exit(0)
+
+    # Mark as failed
     sys.exit(1)
